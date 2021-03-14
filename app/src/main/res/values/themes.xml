@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="WeatherDemoApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+
+
+        <!-- Background color. -->
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorOnBackground">@color/text_color_900</item>
+
+
+        <!-- Button Color. -->
+        <item name="android:colorButtonNormal">@color/color_button_normal</item>
+        <item name="colorButtonNormal">@color/color_button_normal</item>
+
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/background_dark_color</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="Activity.Fullscreen.Theme" parent="WeatherDemoApp">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Widget.App.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.App.Toolbar</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.App.Subtitle1</item>
+    </style>
+
+
+    <style name="ThemeOverlay.App.Toolbar" parent="">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">#f5f5f5</item>
+        <item name="colorOnPrimary">@color/text_color_900</item>
+    </style>
+</resources>

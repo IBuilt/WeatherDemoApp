@@ -1,0 +1,41 @@
+buildscript {
+    ext.kotlin_version = "1.3.11"
+
+    ext.WEB_DEF_URL = "\"http://api.openweathermap.org/\""
+    ext.DATABASE_NAME = "\"openweather.db\""
+    ext.WEB_IMG_URL = "\"http://openweathermap.org/img/wn/\""
+    ext.WEB_API_KEY = "\"fae7190d7e6433ec3a45285ffcf55c86\""
+
+    repositories {
+        google()
+        jcenter()
+
+        maven {
+            url 'https://github.com/psiegman/mvn-repo/raw/master/releases'
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.11"
+
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.28-alpha'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven { url "https://jitpack.io" }
+
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

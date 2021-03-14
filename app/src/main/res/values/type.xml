@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.App.Toolbar" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/work_sans_bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/work_sans_bold</item>
+    </style>
+
+
+    <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:textColor">@color/text_color_900</item>
+    </style>
+
+
+</resources>

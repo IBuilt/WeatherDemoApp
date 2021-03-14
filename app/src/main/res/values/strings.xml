@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather Demo</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="degree">°</string>
+    <string name="title_activity_maps">Select On Map</string>
+    <string name="title_delete">Delete</string>
+    <string name="are_you_sure_to_delete">Are you sure to delete this city ?</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+</resources>
